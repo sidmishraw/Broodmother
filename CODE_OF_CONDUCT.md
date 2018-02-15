@@ -2,6 +2,6 @@
 
 **This is a personal project.**
 
-**However, suggestions and constructive critisism, etc will be higly appreciated.**
+**However, suggestions and constructive critisism, etc will be highly appreciated.**
 
 `- Sid`

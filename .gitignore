@@ -5,3 +5,5 @@ bin
 .project
 *.class
 .gradle
+/build/
+/.DS_Store

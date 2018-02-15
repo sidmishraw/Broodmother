@@ -5,7 +5,6 @@
 /**
  * Spring boot
  */
-
 buildscript {
     repositories {
     		jcenter() 
@@ -24,7 +23,7 @@ buildscript {
 apply plugin: "java"
 apply plugin: "eclipse"
 
-apply plugin: "org.springframework.boot"
+apply plugin: "org.springframework.boot" // for spring-boot
 
 repositories {
     jcenter()
@@ -32,31 +31,29 @@ repositories {
 }
 
 dependencies {
-    
-    
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '1.5.10.RELEASE' // spring boot
+    compile group: "org.springframework.boot", name: "spring-boot-devtools", version: '1.5.10.RELEASE' // spring boot
     
-    compile group: "com.typesafe.akka", name:"akka-actor_2.12", version: "2.5.3"        // akka for actors
+    compile group: "com.typesafe.akka", name:"akka-actor_2.12", version: "2.5.3" // akka for actors
     
-    compile group: "com.google.guava", name: "guava", version: "21.0"                   // guava for immutable-DS
-    compile group: 'uk.com.robust-it', name: 'cloning', version: '1.9.9'                // for deep cloning of java objects
-    compile group: 'com.google.code.gson',name: 'gson', version: '2.8.2'                // for JSON
+    compile group: "com.google.guava", name: "guava", version: "21.0" // guava for immutable-DS
+    compile group: 'uk.com.robust-it', name: 'cloning', version: '1.9.9' // for deep cloning of java objects
+    compile group: 'com.google.code.gson',name: 'gson', version: '2.8.2' // for JSON
     
-    compile group: 'org.apache.solr', name: 'solr-solrj', version: '7.2.1'			   // solrj
+    compile group: 'org.apache.solr', name: 'solr-solrj', version: '7.2.1' // solrj
     
-    compile group: 'org.neo4j.driver', name: 'neo4j-java-driver', version: '1.5.0'      // neo4j driver
+    compile group: 'org.neo4j.driver', name: 'neo4j-java-driver', version: '1.5.0' // neo4j driver
     
-    compile group: 'org.apache.tika', name: 'tika-core', version: '1.17'                // tika core
-    compile group: 'org.apache.tika', name: 'tika-parsers', version: '1.17'             // tika parsers
+    compile group: 'org.apache.tika', name: 'tika-core', version: '1.17' // tika core
+    compile group: 'org.apache.tika', name: 'tika-parsers', version: '1.17' // tika parsers
     
     
-    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'                    // for logging
-    compile group: 'ch.qos.logback', name: 'logback-core', version: '1.2.3'             // logback binder - 1
-    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'          // logback binder - 2
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25' // for logging
+    compile group: 'ch.qos.logback', name: 'logback-core', version: '1.2.3' // logback binder
     
-    compile group: 'org.projectlombok', name: 'lombok', version: '1.16.18'              // adding in lombok for boilerplate reduction
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.16.20' // adding in lombok for boilerplate reduction
     
-    testCompile group: "junit", name: "junit", version:"4.12"                    // Use JUnit test framework
+    testCompile group: "junit", name: "junit", version:"4.12" // Use JUnit test framework
 }
 
 sourceCompatibility = 1.8
